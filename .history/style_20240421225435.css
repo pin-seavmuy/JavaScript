@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+}
+.card {
+    background-color: #eaeaea;
+    padding: 2em;
+    bor
+}
