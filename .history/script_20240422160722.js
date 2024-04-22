@@ -33,5 +33,5 @@ let weather = {
 document
     .querySelector(".search button")
     .addEventListener("click", function() {
-    weather.search();
+    weather.search()
 });

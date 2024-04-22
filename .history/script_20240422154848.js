@@ -22,16 +22,9 @@ let weather = {
         // Ensure loading the icon over HTTPS
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" +icon + "@2x.png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "°C";
-        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind speed " + speed + "km/h";
-    },
-    search: function () {
-        this.fetchWeather(document.querySelector(".search-bar").value);
-    },
+        document.querySelector(".temp").innerText = temp + "&#8451;";
+        document.querySelector(".humidity").innerText = "Humidity: " + humidity + 
+        
+    }
 };
-document
-    .querySelector(".search button")
-    .addEventListener("click", function() {
-    weather.search();
-});
+// weather.fetchWeather("tokyo");

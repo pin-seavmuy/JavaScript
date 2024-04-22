@@ -52,7 +52,7 @@ input.search-bar {
 }
 .h1.temp {
     margin: 0;
-    margin-bottom: 0.4em;
+    margin-bottom: ;
 }
 
 .flex {
@@ -62,5 +62,4 @@ input.search-bar {
 }
 .description {
     text-transform: capitalize;
-    margin-left: 8px;
 }
