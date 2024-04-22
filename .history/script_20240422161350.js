@@ -31,14 +31,13 @@ let weather = {
     },
 };
 
-// Search button listener
+// 
 document
     .querySelector(".search button")
     .addEventListener("click", function() {
     weather.search();
 });
 
-// "Enter" key press listener
 document.querySelector(".search-bar").addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
         weather.search();
