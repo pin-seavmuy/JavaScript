@@ -68,13 +68,11 @@ input.search-bar {
     visibility: hidden;
     max-height: 20px;
     position: relative;
-  }
-  
-  .weather.loading:after {
+
+}
+.weather.loading::after {
     visibility: visible;
     content: "Loading...";
     color: #fff;
     position: absolute;
-    top: 0;
-    left: 20px;
-  }
+}

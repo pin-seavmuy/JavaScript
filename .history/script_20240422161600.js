@@ -19,14 +19,14 @@ let weather = {
         const { speed } = data.wind;
         // console.log(name,icon,description,temp,humidity,speed);
         document.querySelector(".city").innerText = "Weather in " + name;
+        
+        
         // Ensure loading the icon over HTTPS
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" +icon + "@2x.png";
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed " + speed + "km/h";
-        document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
@@ -46,5 +46,3 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
         weather.search();
     }
 });
-
-weather.fetchWeather("Phnom Penh");

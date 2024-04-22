@@ -47,4 +47,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
     }
 });
 
-weather.fetchWeather("Phnom Penh");
+weather.fetchWeather("");
